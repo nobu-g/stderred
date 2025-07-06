@@ -299,7 +299,7 @@ int main(int argc, char **argv) {
     return EXIT_FAILURE;
   }
 
-  void (*init_mocks)() = dlsym(lib, "init_mocks");
+  void (*init_mocks)(struct stderred *) = dlsym(lib, "init_mocks");
 
   if (!init_mocks) {
     printf("Failed getting mocks init function: %s\n", dlerror());

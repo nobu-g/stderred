@@ -10,5 +10,6 @@ struct stderred {
   bool *mock_tty;
 };
 
-#endif /* end of include guard: MOCKS_H_AEXVXBM4 */
+void init_mocks(struct stderred *stderred);
 
+#endif /* end of include guard: MOCKS_H_AEXVXBM4 */
